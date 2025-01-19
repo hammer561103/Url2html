@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+ <!-- tplsync_before_head_opening_tag -->
+ <head>
+  <!-- tplsync_after_head_opening_tag -->
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+  <meta content="true" name="HandheldFriendly"/>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta content="TrueConf" name="apple-mobile-web-app-title"/>
+  <meta content="234354909931691" property="fb:app_id"/>
+  <meta content="video conferencing software" name="page-topic"/>
+  <meta content="noodp" name="robots"/>
+  <meta content="VhDPwD++BDbK6Gu92sI+Geo5nQG08Mgx4x8IdLgV6t8=" name="verify-v1"/>
+  <meta content="3pLwjxYYvSstR0P9Sj2HImpUDnx/HN5/Gd7pG7bHW8I=" name="verify-v1"/>
+  <meta content="TrueConf" property="og:site_name"/>
+  <meta content="en_US" property="og:locale"/>
+  <meta content="https://trueconf.com/webrtc.html" property="og:url"/>
+  <meta content="article" property="og:type"/>
+  <meta content="WebRTC Video Conferences — WebRTC Use Cases" property="og:title"/>
+  <meta content="WebRTC is a standard that enables real-time video conferences. Learn more about WebRTC, its popular use cases, as well as advantages and disadvantages of the technology." property="og:description"/>
+  <meta content="https://trueconf.com/images/webrtc/header/webrtc-logo.svg" property="og:image"/>
+  <meta content="WebRTC is a standard that enables real-time video conferences. Learn more about WebRTC, its popular use cases, as well as advantages and disadvantages of the technology." name="description"/>
+  <title>
+   WebRTC Video Conferences — WebRTC Use Cases
+  </title>
+  <link href="https://trueconf.com/webrtc.html" hreflang="x-default" rel="alternate"/>
+  <link href="https://trueconf.ru/webrtc.html" hreflang="ru" rel="alternate"/>
+  <link href="https://trueconf.com/es-es/webrtc.html" hreflang="es" rel="alternate"/>
+  <link href="https://trueconf.com/pt-br/webrtc.html" hreflang="pt" rel="alternate"/>
+  <link href="https://trueconf.com/hi-in/webrtc.html" hreflang="hi" rel="alternate"/>
+  <link href="https://trueconf.in/webrtc.html" hreflang="en-in" rel="alternate"/>
+  <link href="https://trueconf.com/blog/feed.html" rel="alternate" title="TrueConf" type="application/rss+xml"/>
+  <link href="https://trueconf.com/webrtc.html" rel="canonical"/>
+  <link href="https://trueconf.com/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="/images/touch-icon-iphone.png" rel="apple-touch-icon"/>
+  <style>
+   /* content  */
+        /* Two column responsive box */
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: -12px;
+        }
+        .box > [class*="button"] {
+            margin: 12px;
+        }
+        .box__item {
+            margin: 12px;
+            flex-basis: 288px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        @media screen and (min-width: 992px) {
+            .box {
+                justify-content: flex-start;
+            }
+        }
+        /* Two column responsive box end */
+        .media {
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .blue-block {
+            background: url(/images/landing/blue-wave-bg.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 84px;
+            padding-bottom:65px;
+        }
+  </style>
+  <link as="style" href="https://trueconf.com/css/trueconf/dynamic-libs/google-fonts.min.css?v=1674823061" onload="this.onload = null; this.rel = 'stylesheet';" rel="preload" type="text/css"/>
+  <link href="https://trueconf.com/css/template-public-critical.min.css?v=1734699070" rel="stylesheet" type="text/css">
+   <link href="/css/trueconf/ui-kit/elements/ui-kit-grid.min.css?v=1699371497" rel="stylesheet"/>
+   <link href="/css/trueconf/ui-kit/elements/ui-kit-typography.min.css?v=1699371497" rel="stylesheet"/>
+   <link href="/css/trueconf/ui-kit/elements/ui-kit-buttons.min.css?v=1699371497" rel="stylesheet"/>
+   <link href="/css/trueconf/ui-kit/elements/ui-kit-lists.min.css?v=1699371497" rel="stylesheet"/>
+   <style>
+    /* header */
+        .first-wrapper--lb {
+            background-color: #EFF4FA;
+        }
+        .first-container {
+            overflow: hidden;
+            padding-top: 72px;
+            padding-bottom: 72px;
+        }
+        /* outer grid */
+        .first__content {
+            margin: -48px !important;
+                }
+        .first__slides {
+            margin: 48px;
+        }
+        .first__features {
+            flex-basis: 100%;
+            flex-shrink: 0.75;
+         margin: 48px;
+        }
+        /* end */
+        .first__image {
+            max-height: 277px;
+         width: auto;
+            margin-bottom: 0;
+        }
+        .first__header {
+            color: #242424;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        .first__paragraph {
+            color: #474747;
+        }
+        @media (min-width: 993px) {
+            .first__content {
+                align-items: center;
+            }
+        }
+        /* end */
+   </style>
+   <!--Base JS Start-->
+   <script charset="utf-8" type="text/javascript">
+    window.settingsLangNode="US" === 'RU' ? 'ru' : 'en';
+   </script>
+   <!-- <script type="text/javascript" src="https://trueconf.com/js/settings-public.js" defer></script> -->
+   <script type="text/javascript">
+    var ServerURL = "https://trueconf.com";
+                    var ServerRegion = "US";
+                
+    let settingsJsGlobal = {"l10n":{"next":"next","previous":"previous","close":"close","current":"Photo","name_empty":"The <b>TrueConf ID</b> field is empty","email_empty":"The <b>Email</b> field is empty","password_empty":"The <b>Password</b> field is empty","question":"Question","ok":"Ok","cancel":"Cancel","n/a":"n/a","offline":"offline","online":"online","busy":"busy","join":"join","You want to remove from schedule Event. Are you sure?":"You want to remove from schedule Event. Are you sure?","Sign Up / Personal Area":"Sign Up / Personal Area"},"sitemap":{"id_4":"https://trueconf.com/products/online/password-reset.html"},"url":{"status":"https://trueconf.com/handlers/get-network-status.php"},"language":"en"};
+                let settingsJsGlobalFromIndex = {"addOauth":{"translates":{"emptyfield":"The [b]%field[/b] field is empty","password":"Password"},"site":{"link_4":"https://trueconf.com/products/online/password-reset.html"},"settings":{"id_name":"TrueConf ID"}}};
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript">
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" type="text/javascript">
+   </script>
+   <script defer="" src="https://trueconf.com/js/trueconf/v2/svg4everybody.min.js" type="text/javascript">
+   </script>
+   <script>
+    var chat_request_str = "Hello, I am interested in TrueConf webinars, and I would like to get a free trial.";
+   </script>
+   <!--Base JS End-->
+   <!-- tplsync_before_head_closing_tag -->
+   <!-- Google Tag Manager -->
+   <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PT7GM32');
+   </script>
+   <!-- End Google Tag Manager -->
+  </link>
+ </head>
+ <body class="version-material lang_en page-513">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PT7GM32" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <style>
+   /* HEAD-SEO */
+    :root {
+        --offset-global-header-menu-height: 88px;
+    }
+    html {
+        /* Sticky menu overlap fix */
+        scroll-padding-top: 112px;
+    }
+    .header-menu_wrapper {
+        background-color: #fff;
+        box-shadow: 0 4px 10px -5px rgb(80 80 80 / 10%);
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: var(--offset-global-header-menu-height);
+        z-index: var(--z-index-header-menu-widget-layer, 400);
+        overflow: hidden;
+    }
+    .header-menu_container {
+        margin: 0 auto;
+        max-width: 1160px;
+        padding: 0 20px;
+    }
+    .header-menu_inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 22px 0;
+    }
+    .header-menu_right {
+        display: flex;
+        align-items: center;
+    }
+    .header-menu_button {
+        padding: 9px 18px;
+        text-align: center;
+        border-radius: 6px;
+    }
+    .button--cyan {
+        background-color: #0097A7;
+        margin-right: 20px;
+    }
+    .button--cyan:hover {
+        background-color: #07aeba;
+    }
+    .button--cyan a, .button--transparent a {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .button--cyan a {
+        color: #fff;
+    }
+    .button--transparent {
+        border: 1px solid #373B3C;
+    }
+    .button--transparent:hover {
+        background-color: #373B3C1A;
+    }
+    .button--transparent a {
+        color: #373B3C;
+    }
+    @media (max-width: 768px) {
+        .button--cyan a, .button--transparent a {
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 640px) {
+        .header-menu_logo img {
+            height: 40px;
+        }
+        .header-menu_button {
+            padding: 7px 12px;
+        }
+        .button--cyan a, .button--transparent a {
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 575px) {
+        .header-menu_container {
+            padding: 0 16px;
+        }
+        .header-menu_left {
+            margin-right: 15px;
+        }
+        .header-menu_logo img {
+            height: 38px;
+            width: 130px;
+        }
+        .header-menu_button {
+            padding: 5px 10px;
+        }
+        .hidd-in-mob {
+            display: none;
+        }
+        .button--cyan {
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 400px) {
+        .button--cyan a, .button--transparent a {
+            font-size: 12px;
+        }
+        .header-menu_logo img {
+            width: 120px;
+        }
+    }
+  </style>
+  <header class="header-menu_wrapper">
+   <div class="header-menu_container">
+    <div class="header-menu_inner">
+     <div class="header-menu_left">
+      <div class="header-menu_logo">
+       <a href="https://trueconf.com/">
+        <img alt="TrueConf Video Conferencing Software" height="44" src="https://trueconf.com/images/headMenu/logo.svg" width="178"/>
+       </a>
+      </div>
+     </div>
+     <div class="header-menu_right">
+      <div class="header-menu_button button--cyan">
+       <a href="https://trueconf.com/products/server/video-conferencing-server.html">
+        Download for free
+       </a>
+      </div>
+      <div class="header-menu_button button--transparent hidd-in-mob">
+       <a href="https://trueconf.com/free-video-conferencing.html">
+        Learn more
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="outside-index fw" id="fw-tmplt">
+   <div class="v3-wrapper first-wrapper--lb">
+    <div class="ui-container first-container">
+     <div class="first__content">
+      <div class="first__features">
+       <h1 class="first__header h1--small h1--thick">
+        What is WebRTC?
+       </h1>
+       <p class="primary-medium-text">
+        <b>
+         WebRTC (Web Real Time Communications)
+        </b>
+        is a standard that enables real-time peer-to-peer communication and media data exchange in browsers, eliminating the need to download and install extra applications or add-ons. Thanks to WebRTC, any browser can act as a  video conferencing endpoint: you only need to open your
+        <a href="https://trueconf.com/blog/knowledge-base/connect-to-webrtc.html" target="_blank">
+         meeting web page
+        </a>
+        to start video conferencing. This article describes WebRTC, its popular use cases, as well as
+        <a href="#s-02">
+         advantages
+        </a>
+        and
+        <a href="#s-03">
+         disadvantages
+        </a>
+        of this technology.
+       </p>
+       <p class="primary-medium-text">
+        In this article, we will reveal some of the features of using WebRTC, as well as consider the advantages and disadvantages of this technology.
+       </p>
+      </div>
+      <div class="first__slides">
+       <img class="first__image" src="/images/webrtc/header/webrtc-logo.svg" title="TrueConf" width="100%"/>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="ui-container ui-container--text-special mt-50 mb-50">
+    <h2 class="h3--main h3--thick black-text mb-30">
+     Content
+    </h2>
+    <ul class="ui-list ui-list--medium">
+     <li class="ui-list__item ui-list__item--disc">
+      <a href="#s-01">
+       How WebRTC Works
+      </a>
+     </li>
+     <li class="ui-list__item ui-list__item--disc">
+      <a href="#s-02">
+       Advantages
+      </a>
+     </li>
+     <li class="ui-list__item ui-list__item--disc">
+      <a href="#s-03">
+       Disadvantages
+      </a>
+     </li>
+     <li class="ui-list__item ui-list__item--disc">
+      <a href="#s-04">
+       WebRTC on Mobile Devices
+      </a>
+     </li>
+     <li class="ui-list__item ui-list__item--disc">
+      <a href="#s-05">
+       WebRTC Codecs
+      </a>
+     </li>
+     <li class="ui-list__item ui-list__item--disc">
+      <a href="#s-06">
+       WebRTC Aspects
+      </a>
+     </li>
+     <li class="ui-list__item ui-list__item--disc">
+      <a href="#s-07">
+       WebRTC Connection
+      </a>
+     </li>
+     <li class="ui-list__item ui-list__item--disc">
+      <a href="#s-08">
+       WebRTC and Video Conferencing Market
+      </a>
+     </li>
+     <li class="ui-list__item ui-list__item--disc">
+      <a href="#s-09">
+       WebRTC Use Cases
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div class="ui-container ui-container--text-special mt-50" id="s-01">
+    <h2 class="h3--main h3--thick black-text">
+     How WebRTC Works
+    </h2>
+    <p class="primary-medium-text">
+     Let’s see how WebRTC technology works using a peer-to-peer browser-based call as an example:
+    </p>
+    <img alt="How WebRTC Works" class="media lazy mt-30 mb-30" data-src="/images/webrtc/how-webrtc-works/en/scheme-1.png" itemprop="photo" title="How WebRTC Works"/>
+    <ul class="ui-list ui-list--medium">
+     <li class="ui-list__item ui-list__item--num">
+      A user opens a WebRTC page.
+     </li>
+     <li class="ui-list__item ui-list__item--num">
+      A browser may request access to a webcam and a microphone. In this case, a user needs to grant a permission for the WebRTC app to have access to the user's devices. There are also cases when this permission is not required, e.g. when watching a live stream.
+     </li>
+    </ul>
+    <img alt="How WebRTC Works" class="media lazy mt-30 mb-30" data-src="/images/webrtc/how-webrtc-works/en/scheme-2.png" itemprop="photo" title="How WebRTC Works"/>
+    <ul class="ui-list ui-list--medium" style="counter-set: numbered-list-counter 2;">
+     <li class="ui-list__item ui-list__item--num">
+      Session Description Protocol (SDP) packet is generated in the browser that initiates connection. In fact, it is a text file that contains important connection details, e.g. media data type (audio, video or content), codecs, what parameters are supported by a browser, etc.
+     </li>
+     <li class="ui-list__item ui-list__item--num">
+      Depending on how the technology is implemented, a connection initiator transfers this packet to other participants. A signaling server and WebSocket protocol are often used for this purpose.
+     </li>
+     <li class="ui-list__item ui-list__item--num">
+      On the receiving side, a browser receives an SDP packet and then generates a similar one which also takes on the data from the first packet. The second packet is sent back to the initiating side. Now both clients have already gotten to know each other in some ways.
+     </li>
+     <li class="ui-list__item ui-list__item--num">
+      Depending on its implementation, the network connection state is being analyzed along with the previous steps. Clients are provided with a STUN server address that’s used to find out the device’s external IP address. It is then compared to the internal IP address to determine whether NAT is being used with the connection and, if so, how UDP packets are routed. In more complex cases, e.g. when double NAT is used, developers use TURN servers. They are essentially repeaters turning a peer-to-peer (P2P) connection into a client-server-client one.
+     </li>
+     <li class="ui-list__item ui-list__item--num">
+      Once these steps are successfully completed, the connection is established. The onicecandidate event is invoked periodically to transfer information about IP addresses, NAT settings and connection attempts between clients.
+     </li>
+    </ul>
+    <img alt="How WebRTC Works" class="media lazy mt-30 mb-30" data-src="/images/webrtc/how-webrtc-works/en/scheme-3.png" itemprop="photo" title="How WebRTC Works"/>
+   </div>
+   <div class="ui-container ui-container--text-special">
+    <div class="box">
+     <div class="box__item mt-30 mb-0" id="s-02">
+      <h2 class="h3--main h3--thick black-text mt-0">
+       Advantages
+      </h2>
+      <ul class="ui-list ui-list--medium">
+       <li class="ui-list__item ui-list__item--disc">
+        No software installation required.
+       </li>
+       <li class="ui-list__item ui-list__item--disc">
+        High-quality communication thanks to:
+        <ul class="ui-list ui-list--medium">
+         <li class="ui-list__item ui-list__item--disc">
+          Modern
+          <a href="#videocodecs">
+           video
+          </a>
+          and
+          <a href="#audiocodecs">
+           audio
+          </a>
+          codecs
+         </li>
+         <li class="ui-list__item ui-list__item--disc">
+          Automatic quality adjustment
+         </li>
+         <li class="ui-list__item ui-list__item--disc">
+          Embedded echo and noise cancellation
+         </li>
+         <li class="ui-list__item ui-list__item--disc">
+          Automatic Gain Control (AGC).
+         </li>
+        </ul>
+       </li>
+       <li class="ui-list__item ui-list__item--disc">
+        Strong security focus: all connections are protected and encrypted according to the DTLS and SRTP protocols. At the same time, WebRTC operates only over the HTTPS protocol, while a website using this technology should have a signed certificate.
+       </li>
+       <li class="ui-list__item ui-list__item--disc">
+        SVC support added as part of the VP9 and AV1 codec implementation. Despite the fact that browsers do not support SVC yet, TrueConf enables SVC in browser clients.
+       </li>
+       <li class="ui-list__item ui-list__item--disc">
+        Native desktop sharing feature.
+       </li>
+       <li class="ui-list__item ui-list__item--disc">
+        Control interfaces based on HTML5 and JavaScript.
+       </li>
+       <li class="ui-list__item ui-list__item--disc">
+        Open-source project that can be embedded into your product or service.
+       </li>
+       <li class="ui-list__item ui-list__item--disc">
+        Cross-platform: WebRTC application works equally well with any operating system—desktop or mobile—if a browser supports WebRTC. This significantly saves software development resources.
+       </li>
+      </ul>
+     </div>
+     <div class="box__item mt-30 mb-0" id="s-03">
+      <h2 class="h3--main h3--thick black-text mt-0">
+       Disadvantages
+      </h2>
+      <ul class="ui-list ui-list--medium">
+       <li class="ui-list__item ui-list__item--disc">
+        WebRTC solutions are incompatible with each other, as the standard only describes the methods to transfer video and audio data, enabling developers to decide on addressing methods, status tracking options, message and file exchange, scheduling, etc. In other words, you can’t make calls from one WebRTC application to another.
+       </li>
+       <li class="ui-list__item ui-list__item--disc">
+        Security-conscious users will be disappointed to know that WebRTC detects their real IP addresses. At the same time, neither a proxy nor the Tor network will help remain anonymous. You can hide your IP address using various VPN services and the TURN server. If necessary, WebRTC can be
+        <a href="https://trueconf.com/blog/knowledge-base/how-to-disable-webrtc.html">
+         disabled
+        </a>
+        .
+       </li>
+       <li class="ui-list__item ui-list__item--disc">
+        WebRTC doesn’t support remote desktop control. Of course, you can stream what’s happening on your device’s screen, but it is a one-way video stream like an image transmitted from a camera, while there is no way to interact with a stream source. This is done for security reasons: Javascript code can’t control anything outside its current browser window. You can get more features, including remote desktop control, by using
+        <a href="https://trueconf.com/downloads/windows.html">
+         client applications
+        </a>
+        customized by video conferencing vendors.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="ui-container ui-container--text-special mt-30" id="s-04">
+    <h2 class="h3--main h3--thick black-text mb-0">
+     WebRTC on Mobile Devices
+    </h2>
+    <div aria-label="open video" data-modal-video="https://www.youtube.com/embed/uDtCyk1iByo?autoplay=1&amp;enablejsapi=1" role="button" style="cursor: pointer">
+     <img alt="WebRTC on Mobile Devices" class="media lazy mt-30 mb-30" data-src="/images/webrtc/webrtc-on-mobile-devices/en/yt-facade.png" title="WebRTC on Mobile Devices"/>
+    </div>
+   </div>
+   <div class="ui-container ui-container--text-special mt-30" id="s-05">
+    <h2 class="h2--main h2--thick black-text">
+     WebRTC Codecs
+    </h2>
+    <p class="primary-medium-text">
+     WebRTC codecs can be divided into mandatory (it is required for the browsers implementing this technology to support these codecs) and optional (non-standard, although some browsers support them).
+    </p>
+    <h3 class="h3--main h3--thick black-text" id="audiocodecs">
+     Audio Codecs
+    </h3>
+    <p class="primary-medium-text">
+     To compress audio traffic, WebRTC uses mandatory (Opus and G.711) and optional codecs (G.722, iLBC, iSAC).
+    </p>
+    <p class="primary-medium-text">
+     <strong>
+      Opus
+     </strong>
+     is a low-latency (2.5 ms to 60 ms) audio codec with variable bitrate support and high compression, which is perfect for streaming audio in variable bandwidth networks. Opus is the primary audio codec for WebRTC. It is a hybrid solution that combines the best features of SILK (voice compression and human speech enhancement) and CELT (audio coding) codecs. The codec is open and completely royalty-free. Undoubtedly, Opus outperforms other audio codecs in many ways. As to the number of parameters, it outperforms rather popular low bitrate codecs, such as MP3, Vorbis and AAC LC. Compared to AMR-WB and Speex, Opus restores the audio structure that is the closest to the original.
+    </p>
+    <p class="primary-medium-text">
+     <strong>
+      G.711
+     </strong>
+     is a legacy high bitrate (64 kbps) speech codec designed for use in traditional VoIP systems. The main advantage is the minimum computational load thanks to the lightweight compression algorithms. The codec has a low compression level of audio signals and doesn’t augment audio delay in the communication between users.
+    </p>
+    <p class="primary-medium-text">
+     G.711 is supported by many devices. Systems that utilize this codec are easier to use than those based on other audio codecs, such as G.723, G.726, G.728, etc. In terms of quality, G.711 scored 4.2 in MOS testing (a score of 4–5 is the highest one and means good quality similar to voice traffic quality in ISDN and even higher).
+    </p>
+    <p class="primary-medium-text">
+     Being royalty-free,
+     <strong>
+      G.722
+     </strong>
+     is an ITU-T standard adopted in 1988. It can operate at 48, 56 and 64 kbps, providing audio quality equal to G.711. Similarly to G.711, it’s legacy but still supported by Chrome, Safari and Firefox.
+    </p>
+    <p class="primary-medium-text">
+     <strong>
+      iLBC
+     </strong>
+     (internet Low Bitrate Codec) is an open-source narrowband speech codec supported by Chrome and Safari. Due to the high stream compression, this codec increases the CPU load.
+    </p>
+    <p class="primary-medium-text">
+     <strong>
+      iSAC
+     </strong>
+     (internet Speech Audio Codec) is a formerly proprietary wideband speech audio codec that is now part of the WebRTC project. However, it’s not mandatory but supported by Chrome and Safari. In the case of WebRTC, it uses an adaptive bitrate from 10 to 52 kbps with a sampling rate of 32 kHz.
+    </p>
+    <img alt="Audio and Video Codecs" class="media lazy mt-30 mb-30" data-src="/images/webrtc/webrtc-codecs/en/scheme-1.png" title="Audio and Video Codecs"/>
+    <h3 class="h3--main h3--thick black-text" id="videocodecs">
+     Video Codecs
+    </h3>
+    <p class="primary-medium-text">
+     What video codec to choose for WebRTC? Developers had to think it over for several years, and the answer is VP8 and H.264. There are also optional video codecs (H.265, VP9 and AV1).
+    </p>
+    <p class="primary-medium-text">
+     <strong>
+      VP8
+     </strong>
+     is a royalty-free open video codec featuring high video decoding speed and enhanced frame loss resistance. The codec is multifunctional: it’s easy to integrate into hardware platforms, so video conferencing providers often use it in their products. It’s compatible with Chrome, Edge, Firefox and Safari (12.1+).
+    </p>
+    <p class="primary-medium-text">
+     The paid video codec H.264 came to be known much earlier than its counterpart. This codec offers a high compression ratio for video streams while maintaining high video quality. Widely used in hardware video conferencing systems, it’s perfect for WebRTC. It’s compatible with Chrome (52+), Edge, Firefox (no longer supported in versions 68+ for Android) and Safari.
+    </p>
+    <p class="primary-medium-text">
+     <strong>
+      VP9
+     </strong>
+     is an open and royalty-free video compression standard developed by Google in 2012. Subsequently expanded within AV1It, it results from the ideas behind VP8. This codec is compatible with Chrome (48+) and Firefox.
+    </p>
+    <p class="primary-medium-text">
+     <strong>
+      H.265
+     </strong>
+     is a paid video codec seen as a successor to H.264 and providing the same visual quality at half the bitrate. This is possible thanks to more efficient compression algorithms. This codec is currently competing with royalty-free AV1.
+    </p>
+    <p class="primary-medium-text">
+     <strong>
+      AV1
+     </strong>
+     is an open-source video compression codec purpose-built for video transmission over the Internet. It’s supported by Chrome (70+) and Firefox (67+).
+    </p>
+   </div>
+   <div class="ui-container ui-container--text-special mt-30" id="s-06">
+    <h2 class="h2--main h2--thick black-text mb-0">
+     WebRTC Aspects
+    </h2>
+    <iframe class="mt-30 lazy" data-src="https://www.youtube.com/embed/DdEbQYd70x4" style="width: 100%; aspect-ratio: 16/9;">
+    </iframe>
+   </div>
+   <div class="ui-container ui-container--text-special mt-30" id="s-07">
+    <h2 class="h2--main h2--thick black-text">
+     WebRTC Connection
+    </h2>
+    <p class="primary-medium-text">
+     Depending on your WebRTC implementation, there may be certain differences in the compatible browsers’ versions. Learn more about desktop and mobile browsers supported by TrueConf
+     <a href="https://trueconf.com/support/system-requirements.html#webrtc">
+      here
+     </a>
+     .
+    </p>
+    <p class="primary-medium-text">
+     If you’re eager to know how the WebRTC technology will develop, we recommend that you visit its
+     <a href="https://webrtc.org">
+      official website
+     </a>
+     , WebRTC project
+     <a href="https://www.w3.org/TR/webrtc/">
+      website
+     </a>
+     and
+     <a href="https://webrtc.googlesource.com/src">
+      repository
+     </a>
+     .
+    </p>
+   </div>
+   <div class="ui-container ui-container--text-special mt-30" id="s-08">
+    <h2 class="h2--main h2--thick black-text">
+     WebRTC and Video Conferencing Market
+    </h2>
+    <div class="box">
+     <div class="box__item mt-30 mb-0">
+      <h3 class="h3--main h3--thick black-text mt-0">
+       Technology’s Popularity
+      </h3>
+      <p class="products-default__paragraph">
+       Today, WebRTC is the second most popular video protocol after Zoom's proprietary one. WebRTC outpaces all other standard (H.323 and SIP) and proprietary (Microsoft Teams and Cisco Webex) protocols.
+      </p>
+      <h2 class="h3--main h3--thick black-text">
+       A Rise in Video Conferencing Endpoints
+      </h2>
+      <p class="products-default__paragraph">
+       WebRTC technology has had a profound impact on the video conferencing market. Upon release of the first browsers with WebRTC in 2013, the potential number of video conferencing endpoints has increased by 1 billion devices worldwide. In fact, each browser is now a video conferencing endpoint with basic capabilities.
+      </p>
+     </div>
+     <div class="box__item mt-30 mb-0">
+      <h3 class="h3--main h3--thick black-text mt-0">
+       Customized Solutions
+      </h3>
+      <p class="products-default__paragraph">
+       Various JavaScript libraries and cloud APIs with WebRTC support enable you to add video support to any web project. Previously, transferring data in real time required advanced programming skills and additional licensing, which resulted in cost increase. Today, WebRTC is widely used to organize video-enabled contact centers, hold
+       <a href="https://trueconf.com/blog/knowledge-base/how-to-host-a-webinar-using-trueconf-server.html">
+        webinars
+       </a>
+       , etc.
+      </p>
+      <h3 class="h3--main h3--thick black-text">
+       WebRTC vs Flash
+      </h3>
+      <p class="products-default__paragraph">
+       WebRTC and HTML5 were a kill shot for Flash that was already going through its hard times. Since 2017, the leading browsers have officially ceased to support Flash, forcing this technology to vanish from the market completely.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="ui-container ui-container--text-special mt-30" id="s-09">
+    <h2 class="h2--main h2--thick black-text">
+     WebRTC Use Cases
+    </h2>
+    <img alt="TrueConf Server" class="media lazy mt-30 mb-30" data-src="/images/webinars/webinar-439-en.png" itemprop="photo" title="TrueConf Server"/>
+    <p class="primary-medium-text">
+     TrueConf Server is a self-hosted  SVC-based video conferencing system that operates both in LAN/VPN and over the Internet. The webinar server is deployed on your company’s premises, restricting third-party access to your personal data. TrueConf might be a good solution for virtual event broadcasting, distance learning and remote work thanks to 4K resolution video and a number of collaboration tools.
+    </p>
+    <div class="box mt-30 mb-0" style="justify-content: center; align-items: center;">
+     <a class="default-button default-button--lg default-button--orange default-button--rounded" href="https://trueconf.com/products/server/video-conferencing-server.html" style="margin-bottom: 0; margin-top: 0">
+      <span class="default-button__text white-text">
+       Download for free
+      </span>
+     </a>
+     <a class="default-button default-button--lg to-page to-page--rarr cyan-icon" href="https://trueconf.com/server/buy/" style="margin-bottom: 0; margin-top: 0">
+      <span class="default-button__text cyan-text">
+       Prices
+      </span>
+     </a>
+    </div>
+    <h3 class="h3--main h3--thick black-text">
+     Google Meet
+    </h3>
+    <p class="primary-medium-text">
+     Google Meet is an instant messaging, audio and video communication service launched by Google in 2017. Chromium-based browsers (Google Chrome, etc.) use many hidden WebRTC features that aren’t described in tech specs. New WebRTC releases are usually integrated into Google Meet (as with its predecessor, Google Hangouts), e.g. screen capture, blurred background and hardware encryption for some platforms.
+    </p>
+    <h3 class="h3--main h3--thick black-text">
+     Jitsi Meet
+    </h3>
+    <p class="primary-medium-text">
+     Jitsi Meet is an open-source application released by 8x8. Jitsi technology is based on Simulcast architecture, which means the service may operate unstably in low bandwidth and require high-speed Internet connection on the server side. Jitsi supports browser-based conferences only and doesn’t provide full-fledged video conferencing applications. With Jitsi, it is possible to accommodate up to 75 participants in a meeting (up to 35 for high-quality experience). However, Jitsi is not a ready-made solution, so to make full use of Jitsi in a corporate environment, you will need advanced programming skills.
+    </p>
+    <h3 class="h3--main h3--thick black-text">
+     BigBlueButton
+    </h3>
+    <p class="primary-medium-text">
+     BigBlueButton is a free-to-use video conferencing software with a strong education focus. BigBlueButton supports video meetings with up to 100 participants and provides a lot of features essential for distance learning, e.g.  interactive whiteboard, content sharing, polls, breakout rooms and more.
+    </p>
+    <h3 class="h3--main h3--thick black-text">
+     What about Zoom WebRTC?
+    </h3>
+    <p class="primary-medium-text">
+     Contrary to popular belief, Zoom doesn’t use WebRTC technology to transfer and decode media data in order to save server resources. On the browser side, Zoom involves other web technologies, such as WebAssembly and WebSocket. Non-standard approaches to transferring video streams may result in low audio and video quality and connectivity problems.
+    </p>
+   </div>
+   <div class="blue-block" style="margin-top: 140px;">
+    <div class="ui-container">
+     <h2 class="h2--main h2--thick white-text center-text">
+      Deploy your own webinar server in 15 minutes!
+     </h2>
+     <div class="box mt-30" style="justify-content: center; align-items: center">
+      <a class="default-button default-button--truncate default-button--lg default-button--orange default-button--rounded default-button__download-icon default-button--left-icon white-icon" data-ga-event="trueconf_server" href="https://trueconf.com/products/tcsf/trueconf-server-free.html">
+       <span class="default-button__text white-text">
+        Download for free
+       </span>
+      </a>
+      <button class="default-button default-button--truncate default-button--lg default-button--transparent default-button--rounded default-button--transparent default-button--border-light" onclick="liveChat.say(chat_request_str)">
+       <span class="default-button__text white-text">
+        Request a demo
+       </span>
+      </button>
+     </div>
+    </div>
+   </div>
+   <div class="v3-container">
+    <div class="tree" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+     <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+      <a href="https://trueconf.com/" itemprop="item">
+       <span itemprop="name">
+        Video Conferencing Software
+       </span>
+      </a>
+      <meta content="1" itemprop="position"/>
+     </div>
+     »
+     <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+      <a href="https://trueconf.com/webrtc.html" itemprop="item">
+       <span itemprop="name">
+        WebRTC
+       </span>
+      </a>
+      <meta content="2" itemprop="position"/>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- tplsync_before_footer_opening_tag -->
+  <div class="clear">
+  </div>
+  <footer class="us" id="footer">
+   <!-- tplsync_after_footer_opening_tag -->
+   <div id="footer-css">
+    <style>
+     #footer-menu {
+            background-color: #373B3C;
+        }
+
+        #footer-menu .loading {
+            visibility: hidden;
+            max-height: 30vh;
+            overflow: hidden;
+        }
+    </style>
+   </div>
+   <div id="footer-menu">
+    <div class="grid-container container--mw-1140 loading">
+     <div class="products accordion">
+      <p class="header">
+       <a class="accordion__button" href="https://trueconf.com/products/">
+        Products
+       </a>
+      </p>
+      <ul class="links-list">
+       <li>
+        <a href="https://trueconf.com/products/tcsf/trueconf-server-free.html">
+         TrueConf Server Free
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/products/server/video-conferencing-server.html">
+         TrueConf Server
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/products/online/video-conferencing-service.html">
+         TrueConf Online
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/products/mcu/">
+         TrueConf MCU
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/products/room.html">
+         TrueConf Room
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/products/group.html">
+         TrueConf Group
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/products/videobar.html">
+         TrueConf Videobar
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/products/kiosk.html">
+         TrueConf Kiosk
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/products/video-sdk.html">
+         TrueConf VideoSDK
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="apps accordion">
+      <p class="header">
+       <button class="accordion__button" translate="no">
+        Applications
+       </button>
+      </p>
+      <ul class="links-list">
+       <li>
+        <a href="https://trueconf.com/downloads/windows.html">
+         Windows
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/downloads/mac.html">
+         macOS
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/downloads/linux.html">
+         Linux
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/downloads/ios.html">
+         iOS
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/downloads/android.html">
+         Android
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/downloads/android-tv.html">
+         Android TV
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="support accordion">
+      <p class="header">
+       <button class="accordion__button" translate="no">
+        Support
+       </button>
+      </p>
+      <ul class="links-list">
+       <li>
+        <a href="https://trueconf.com/products/online/password-reset.html">
+         Password assistance
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/support/technical-support.html">
+         Submit a ticket
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/blog/knowledge-base/">
+         Knowledge base
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/support/communication-channels.html">
+         Bandwidth requirements
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/support/system-requirements.html">
+         System requirements
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/docs/main/">
+         TrueConf Documentation
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="about accordion">
+      <p class="header">
+       <button class="accordion__button" translate="no">
+        About us
+       </button>
+      </p>
+      <ul class="links-list">
+       <li>
+        <a href="https://trueconf.com/company/contacts.html">
+         Contacts
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/company/about.html">
+         About company
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/company/customers.html">
+         Customer case studies
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/company/partners/become-a-partner.html">
+         Become a partner
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/company/partners/">
+         Find a partner
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/company/media-kit.html">
+         Media kit
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/blog/">
+         News
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="video-conferencing accordion">
+      <p class="header">
+       <button class="accordion__button" translate="no">
+        Useful links
+       </button>
+      </p>
+      <ul class="links-list">
+       <li>
+        <a href="https://trueconf.com/free-video-conferencing.html">
+         Free Video Conferencing
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/webrtc.html">
+         What is WebRTC?
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/trueconf-vs-zoom/">
+         TrueConf vs. Zoom
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/trueconf-vs-webex.html">
+         TrueConf vs. Cisco Webex
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/teams-alternative.html">
+         TrueConf vs. Microsoft Teams
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/google-hangouts-alternatives.html">
+         TrueConf vs. Google Meet
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/trueconf-vs-skype-for-business.html">
+         TrueConf vs. Skype for Business
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/trueconf-vs-jitsi.html">
+         TrueConf vs. Jitsi
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/bigbluebutton-alternative.html">
+         TrueConf vs. BigBlueButton
+        </a>
+       </li>
+       <li>
+        <a href="https://trueconf.com/google-meet-vs-zoom-vs-skype-vs-others.html">
+         Video Conferencing Software Chart
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="social-block">
+      <div class="chat">
+       <button class="chat__button" onclick="beginChat()" translate="no">
+        <span>
+         Live chat
+        </span>
+       </button>
+      </div>
+      <div class="phone">
+       <a href="tel:+1 833 878-32-63">
+        +1 833 878-32-63
+       </a>
+      </div>
+      <a class="logo" href="https://trueconf.com/">
+       <img alt="TrueConf logo" class="lazy" data-src="https://trueconf.com/images/headMenu/logo.svg" style="aspect-ratio: 150 / 42;"/>
+      </a>
+      <div class="sticker">
+       <a href="https://www.g2.com/products/trueconf-server/reviews" rel="nofollow" target="_blank">
+        <img alt="TrueConf at G2Crowd" class="lazy" data-src="/images/common/icons/stickers/G2crowd.svg" style="aspect-ratio: 160 / 93;"/>
+       </a>
+      </div>
+      <div class="social-block__icons">
+       <a aria-label="WhatsApp" class="social-block__link" href="https://chat.whatsapp.com/GY97WBzSgvD1cJG0dWEiGP" rel="nofollow" target="_blank">
+        <svg class="social-block__icon--sprite" role="img">
+         <title>
+          WhatsApp
+         </title>
+         <use xlink:href="/images/common/sprites/social-icons-sprite.svg#whatsapp">
+         </use>
+        </svg>
+       </a>
+       <a aria-label="Facebook" class="social-block__link" href="https://www.facebook.com/trueconf" rel="nofollow" target="_blank">
+        <svg class="social-block__icon--sprite" role="img">
+         <title>
+          Facebook
+         </title>
+         <use xlink:href="/images/common/sprites/social-icons-sprite.svg#facebook">
+         </use>
+        </svg>
+       </a>
+       <a aria-label="YouTube" class="social-block__link" href="https://www.youtube.com/c/TrueConfVideoConferencing" rel="nofollow" target="_blank">
+        <svg class="social-block__icon--sprite" role="img">
+         <title>
+          YouTube
+         </title>
+         <use xlink:href="/images/common/sprites/social-icons-sprite.svg#youtube">
+         </use>
+        </svg>
+       </a>
+       <a aria-label="LinkedIn" class="social-block__link" href="https://www.linkedin.com/company/trueconf/" rel="nofollow" target="_blank">
+        <svg class="social-block__icon--sprite" role="img">
+         <title>
+          LinkedIn
+         </title>
+         <use xlink:href="/images/common/sprites/social-icons-sprite.svg#linkedin">
+         </use>
+        </svg>
+       </a>
+       <a aria-label="Twitter" class="social-block__link" href="https://twitter.com/trueconf" rel="nofollow" target="_blank">
+        <svg class="social-block__icon--sprite" role="img">
+         <title>
+          Twitter
+         </title>
+         <use xlink:href="/images/common/sprites/social-icons-sprite.svg#twitter">
+         </use>
+        </svg>
+       </a>
+       <a aria-label="GitHub" class="social-block__link" href="https://github.com/trueconf" rel="nofollow" target="_blank">
+        <svg class="social-block__icon--sprite" role="img">
+         <title>
+          GitHub
+         </title>
+         <use xlink:href="/images/common/sprites/social-icons-sprite.svg#github">
+         </use>
+        </svg>
+       </a>
+      </div>
+      <div class="terms-n-copy">
+       <div class="terms-n-copy__links">
+        <a href="https://trueconf.com/company/legal/terms.html">
+         Terms of Use
+        </a>
+        <a href="https://trueconf.com/company/legal/cookie.html">
+         Cookie Policy
+        </a>
+        <a href="https://trueconf.com/company/legal/privacy.html">
+         Privacy Policy
+        </a>
+        <a href="https://trueconf.com/sitemap/">
+         Sitemap
+        </a>
+       </div>
+       <p class="copy">
+        <span>
+         © 2010  — 2025. TrueConf LLC. All rights reserved.
+        </span>
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <script async="" src="https://trueconf.com/pkg/trueconf/general/footer-menu/js/footer-menu.js?v=1734718476">
+   </script>
+   <script type="text/javascript">
+    function beginChat() {
+            let chat_request_str;
+            if (window.chat_request_str) {
+                chat_request_str = window.chat_request_str;
+            } else {
+                                chat_request_str = `Hello, I am interested in TrueConf solution for video conferencing in LAN and over the Internet.`;
+                            }
+            return liveChat.say(chat_request_str);
+        }
+   </script>
+   <!-- tplsync_before_footer_closing_tag -->
+  </footer>
+  <div id="tail-js">
+   <script defer="" src="https://trueconf.com/js/trueconf/js-public-bundle.min.js?v=1731944135" type="text/javascript">
+   </script>
+   <script defer="" src="https://trueconf.com/js/trueconf/dynamic-libs/dynamic-libs.min.js?v=1722353539" type="text/javascript">
+   </script>
+   <script>
+    window.addEventListener("DOMContentLoaded", async () => {
+        try {
+            await ResourceManager.require("https://trueconf.com/pkg/trueconf/public-area/modal-player/modal-player.js");
+        } catch (e) {
+            console.log(new Error("Modal player import failed, cause: ", { cause: e }));
+        }
+    });
+   </script>
+  </div>
+  <!-- Global modals -->
+  <div class="modal" id="login">
+  </div>
+  <!-- #login -->
+  <div id="js_confirmation">
+  </div>
+  <div id="cookiesInformer">
+  </div>
+  <script>
+   document.write('<img src="'+ServerURL+'/images/1.gif?ref='+document.referrer+'" style="display:none;" />');
+  </script>
+  <script>
+   window.addEventListener('DOMContentLoaded', function() {
+                svg4everybody();
+            });
+  </script>
+  <div id="live_chat">
+  </div>
+ </body>
+</html>

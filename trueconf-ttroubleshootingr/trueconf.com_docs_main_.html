@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Online Installation and Configuration Guide | TrueConf
+  </title>
+  <meta content="VuePress 1.9.10" name="generator"/>
+  <script src="/docs/main/js/ya.js">
+  </script>
+  <script src="/docs/main/js/ga.js">
+  </script>
+  <script src="/docs/main/js/widgets.js">
+  </script>
+  <meta content="TrueConf documentation. Administrator's and user's guides for setting up and running video conferences" name="description"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link as="style" href="/docs/main/assets/css/0.styles.885e7da6.css" rel="preload"/>
+  <link as="script" href="/docs/main/assets/js/app.a27afe7b.js" rel="preload"/>
+  <link as="script" href="/docs/main/assets/js/2.76ff991c.js" rel="preload"/>
+  <link as="script" href="/docs/main/assets/js/1.98c52639.js" rel="preload"/>
+  <link as="script" href="/docs/main/assets/js/34.804579db.js" rel="preload"/>
+  <link as="script" href="/docs/main/assets/js/27.48d9fe56.js" rel="preload"/>
+  <link as="script" href="/docs/main/assets/js/30.44187987.js" rel="preload"/>
+  <link as="script" href="/docs/main/assets/js/28.61a155f2.js" rel="preload"/>
+  <link as="script" href="/docs/main/assets/js/23.0e45a671.js" rel="preload"/>
+  <link as="script" href="/docs/main/assets/js/18.327381d5.js" rel="preload"/>
+  <link href="/docs/main/assets/js/10.ccbeb220.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/11.90aaa9c7.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/12.251c890f.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/13.35e33f87.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/14.e5af7294.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/15.fdce5791.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/16.d129fd7d.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/17.46969d43.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/19.59876821.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/20.24f07836.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/21.b8499972.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/22.95fc51f5.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/24.9125f047.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/25.ef3d438d.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/26.ad3b4041.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/29.da695d97.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/3.aa5673c8.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/31.765186d1.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/32.64261e7d.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/33.67acf8e4.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/35.5606a94a.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/36.53ae79c9.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/37.6d2de5f3.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/4.7054eb62.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/5.4466f105.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/6.16990def.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/7.25155659.js" rel="prefetch"/>
+  <link href="/docs/main/assets/js/vendors~docsearch.af85784a.js" rel="prefetch"/>
+  <link href="/docs/main/assets/css/0.styles.885e7da6.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div data-server-rendered="true" id="app">
+   <div class="theme-container">
+    <header class="navbar">
+     <div class="sidebar-button">
+      <svg aria-hidden="true" class="icon" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" fill="currentColor">
+       </path>
+      </svg>
+     </div>
+     <a aria-current="page" class="home-link router-link-exact-active router-link-active" href="/docs/main/en/">
+      <!-- -->
+      <span class="site-name">
+       TrueConf
+      </span>
+     </a>
+     <div class="links">
+      <!-- -->
+      <nav class="nav-links can-hide">
+       <div class="nav-item">
+        <div class="dropdown-wrapper">
+         <button aria-label="Lang" class="dropdown-title" type="button">
+          <span class="title">
+          </span>
+          <span class="arrow down">
+          </span>
+         </button>
+         <button aria-label="Lang" class="mobile-dropdown-title" type="button">
+          <span class="title">
+          </span>
+          <span class="arrow right">
+          </span>
+         </button>
+         <ul class="nav-dropdown" style="display:none;">
+          <li class="dropdown-item">
+           <!-- -->
+           <a aria-current="page" class="nav-link router-link-exact-active router-link-active" href="/docs/main/en/">
+            English - English
+           </a>
+          </li>
+          <li class="dropdown-item">
+           <!-- -->
+           <a class="nav-link" href="/docs/main/pt/">
+            Portuguese - PortuguÃªs
+           </a>
+          </li>
+          <li class="dropdown-item">
+           <!-- -->
+           <a class="nav-link" href="/docs/main/ru/">
+            Russian - Ð ÑÑÑÐºÐ¸Ð¹
+           </a>
+          </li>
+          <li class="dropdown-item">
+           <!-- -->
+           <a class="nav-link" href="/docs/main/es/">
+            Spanish - EspaÃ±ol
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <!-- -->
+      </nav>
+     </div>
+    </header>
+    <div class="sidebar-mask">
+    </div>
+    <aside class="sidebar">
+     <nav class="nav-links">
+      <div class="nav-item">
+       <div class="dropdown-wrapper">
+        <button aria-label="Lang" class="dropdown-title" type="button">
+         <span class="title">
+         </span>
+         <span class="arrow down">
+         </span>
+        </button>
+        <button aria-label="Lang" class="mobile-dropdown-title" type="button">
+         <span class="title">
+         </span>
+         <span class="arrow right">
+         </span>
+        </button>
+        <ul class="nav-dropdown" style="display:none;">
+         <li class="dropdown-item">
+          <!-- -->
+          <a aria-current="page" class="nav-link router-link-exact-active router-link-active" href="/docs/main/en/">
+           English - English
+          </a>
+         </li>
+         <li class="dropdown-item">
+          <!-- -->
+          <a class="nav-link" href="/docs/main/pt/">
+           Portuguese - PortuguÃªs
+          </a>
+         </li>
+         <li class="dropdown-item">
+          <!-- -->
+          <a class="nav-link" href="/docs/main/ru/">
+           Russian - Ð ÑÑÑÐºÐ¸Ð¹
+          </a>
+         </li>
+         <li class="dropdown-item">
+          <!-- -->
+          <a class="nav-link" href="/docs/main/es/">
+           Spanish - EspaÃ±ol
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <!-- -->
+     </nav>
+     <ul class="sidebar-links">
+      <li>
+       <a class="sidebar-link" href="https://trueconf.com" rel="noopener noreferrer" target="_blank">
+        Our site
+        <span>
+         <svg aria-hidden="true" class="icon outbound" focusable="false" height="15" viewbox="0 0 100 100" width="15" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z" fill="currentColor">
+          </path>
+          <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+          </polygon>
+         </svg>
+         <span class="sr-only">
+          (opens new window)
+         </span>
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="sidebar-link" href="https://trueconf.com/blog" rel="noopener noreferrer" target="_blank">
+        Blog
+        <span>
+         <svg aria-hidden="true" class="icon outbound" focusable="false" height="15" viewbox="0 0 100 100" width="15" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z" fill="currentColor">
+          </path>
+          <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+          </polygon>
+         </svg>
+         <span class="sr-only">
+          (opens new window)
+         </span>
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="sidebar-link" href="https://trueconf.com/blog/knowledge-base" rel="noopener noreferrer" target="_blank">
+        Knowledge base
+        <span>
+         <svg aria-hidden="true" class="icon outbound" focusable="false" height="15" viewbox="0 0 100 100" width="15" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z" fill="currentColor">
+          </path>
+          <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+          </polygon>
+         </svg>
+         <span class="sr-only">
+          (opens new window)
+         </span>
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="sidebar-link" href="https://trueconf.com/blog/wiki" rel="noopener noreferrer" target="_blank">
+        Terminology
+        <span>
+         <svg aria-hidden="true" class="icon outbound" focusable="false" height="15" viewbox="0 0 100 100" width="15" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z" fill="currentColor">
+          </path>
+          <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+          </polygon>
+         </svg>
+         <span class="sr-only">
+          (opens new window)
+         </span>
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="sidebar-link" href="https://trueconf.com/support/system-requirements.html" rel="noopener noreferrer" target="_blank">
+        System requirements
+        <span>
+         <svg aria-hidden="true" class="icon outbound" focusable="false" height="15" viewbox="0 0 100 100" width="15" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z" fill="currentColor">
+          </path>
+          <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+          </polygon>
+         </svg>
+         <span class="sr-only">
+          (opens new window)
+         </span>
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="sidebar-link" href="https://trueconf.com/support/premium-support.html#update-policy" rel="noopener noreferrer" target="_blank">
+        Renewal and license policy
+        <span>
+         <svg aria-hidden="true" class="icon outbound" focusable="false" height="15" viewbox="0 0 100 100" width="15" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z" fill="currentColor">
+          </path>
+          <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+          </polygon>
+         </svg>
+         <span class="sr-only">
+          (opens new window)
+         </span>
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="sidebar-link" href="https://trueconf.com/academy/" rel="noopener noreferrer" target="_blank">
+        Training
+        <span>
+         <svg aria-hidden="true" class="icon outbound" focusable="false" height="15" viewbox="0 0 100 100" width="15" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z" fill="currentColor">
+          </path>
+          <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+          </polygon>
+         </svg>
+         <span class="sr-only">
+          (opens new window)
+         </span>
+        </span>
+       </a>
+      </li>
+     </ul>
+    </aside>
+    <main class="page">
+     <div class="theme-default-content content__default">
+      <div style="clear:both;">
+      </div>
+      <div id="bottom-content">
+       <div class="block-title">
+        Select product
+       </div>
+       <div class="flex-row">
+        <div class="three-column">
+         <span>
+          <a href="../../server/en/" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/tcs_logo/en.svg" src="/docs/main/media/tcs_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf Server
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../mcu/en/introduction" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/tcm_logo/en.svg" src="/docs/main/media/tcm_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf MCU
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../room/en/introduction" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/tcr_logo/en.svg" src="/docs/main/media/tcr_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf Room
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../group/en/introduction/" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/tcg_logo/en.svg" src="/docs/main/media/tcg_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf Group
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../client/en/installation" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/tcw_logo/en.svg" src="/docs/main/media/tcw_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf for Windows
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../client/en/installation" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/tcx_logo/en.svg" src="/docs/main/media/tcx_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf for macOS
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../client/en/installation" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/tcl_logo/en.svg" src="/docs/main/media/tcl_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf for Linux
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../videobar/en/characteristics/" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/tcv_logo/en.svg" src="/docs/main/media/tcv_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf Videobar
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../client-android/en/installation" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/android_logo/en.svg" src="/docs/main/media/android_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf for Android
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../client-android-tv/en/getting-ready/" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/tcatv_logo/en.svg" src="/docs/main/media/tcatv_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf for Android TV
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../client-ios/en/installation" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/ios_logo/en.svg" src="/docs/main/media/ios_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf for iOS/iPadOS
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../kiosk/en/overview" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/tck_logo/en.svg" src="/docs/main/media/tck_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf Kiosk
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../border-controller/en/introduction/" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/bc_logo/en.svg" src="/docs/main/media/bc_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf Border Controller
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <div class="three-column">
+         <a href="https://developers.trueconf.com/api/server/" target="_blank">
+          <span class="border">
+           <span class="name">
+            <span class="logo">
+             <div class="zoomed-image-wrap" style="border:none;">
+              <div class="zoomed-image">
+               <img alt="/docs/main/media/sdk_logo/en.svg" src="/docs/main/media/sdk_logo/en.svg"/>
+              </div>
+             </div>
+            </span>
+            <span>
+             TrueConf Server API
+            </span>
+           </span>
+          </span>
+         </a>
+        </div>
+        <div class="three-column">
+         <span>
+          <a href="../../videosdk/en/introduction/common" target="_self">
+           <span class="border">
+            <span class="name">
+             <span class="logo">
+              <div class="zoomed-image-wrap" style="border:none;">
+               <div class="zoomed-image">
+                <img alt="/docs/main/media/room_api_logo/en.svg" src="/docs/main/media/room_api_logo/en.svg"/>
+               </div>
+              </div>
+             </span>
+             <span>
+              TrueConf VideoSDK
+             </span>
+            </span>
+           </span>
+          </a>
+         </span>
+        </div>
+        <!-- -->
+       </div>
+       <div style="clear:both;">
+       </div>
+       <hr/>
+       <div class="block-title">
+        PDF guides
+       </div>
+       <hr/>
+       <div class="pdf-section">
+        <div class="flex-row">
+         <div class="three-column">
+          <div class="pdf-border">
+           <span>
+            <a href="../../manual/server/trueconf-administrator-en.pdf" target="_self">
+             <span>
+              TrueConf Server Administrator Guide
+             </span>
+             <!-- -->
+             <span class="lang-filter-style">
+              (PDF, 6.2 MB)
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+         <div class="three-column">
+          <div class="pdf-border">
+           <span>
+            <a href="../../manual/server/trueconf-user-en.pdf" target="_self">
+             <span>
+              TrueConf Server User Guide
+             </span>
+             <!-- -->
+             <span class="lang-filter-style">
+              (PDF, 2.7 MB)
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+         <div class="three-column">
+          <div class="pdf-border">
+           <span>
+            <a href="../../manual/mcu/trueconf-mcu-en.pdf" target="_self">
+             <span>
+              TrueConf MCU
+             </span>
+             <!-- -->
+             <span class="lang-filter-style">
+              (PDF, 3.7 MB)
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+         <div class="three-column">
+          <div class="pdf-border">
+           <span>
+            <a href="../../manual/room/trueconf-room-en.pdf" target="_self">
+             <span>
+              TrueConf Room
+             </span>
+             <!-- -->
+             <span class="lang-filter-style">
+              (PDF, 3.3 MB)
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+         <div class="three-column">
+          <div class="pdf-border">
+           <span>
+            <a href="../../manual/client/trueconf-client-en.pdf" target="_self">
+             <span>
+              TrueConf 8 for Windows, macOS, Linux
+             </span>
+             <!-- -->
+             <span class="lang-filter-style">
+              (PDF, 11.4 MB)
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+         <div class="three-column">
+          <div class="pdf-border">
+           <span>
+            <a href="../../manual/group/trueconf-group-en.pdf" target="_self">
+             <span>
+              TrueConf Group
+             </span>
+             <!-- -->
+             <span class="lang-filter-style">
+              (PDF, 2.0 MB)
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+         <div class="three-column">
+          <div class="pdf-border">
+           <span>
+            <a href="../../manual/videobar/trueconf-videobar-en.pdf" target="_self">
+             <span>
+              TrueConf Videobar
+             </span>
+             <!-- -->
+             <span class="lang-filter-style">
+              (PDF, 2.7 MB)
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+         <div class="three-column">
+          <div class="pdf-border">
+           <span>
+            <a href="../../manual/kiosk/trueconf-kiosk-en.pdf" target="_self">
+             <span>
+              TrueConf Kiosk
+             </span>
+             <!-- -->
+             <span class="lang-filter-style">
+              (PDF, 1.6 MB)
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+         <div class="three-column">
+          <div class="pdf-border">
+           <span>
+            <a href="../../manual/client/trueconf-client-android-en.pdf" target="_self">
+             <span>
+              TrueConf for Android
+             </span>
+             <!-- -->
+             <span class="lang-filter-style">
+              (PDF, 6.0 MB)
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+         <div class="three-column">
+          <div class="pdf-border">
+           <span>
+            <a href="../../manual/client/trueconf-client-android-tv-en.pdf" target="_self">
+             <span>
+              TrueConf for Android TV
+             </span>
+             <!-- -->
+             <span class="lang-filter-style">
+              (PDF, 5.9 MB)
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+         <div class="three-column">
+          <div class="pdf-border">
+           <span>
+            <a href="../../manual/client/trueconf-client-ios-en.pdf" target="_self">
+             <span>
+              TrueConf for iOS/iPadOS
+             </span>
+             <!-- -->
+             <span class="lang-filter-style">
+              (PDF, 6.7 MB)
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+         <div class="three-column">
+          <div class="pdf-border">
+           <span>
+            <a href="../../manual/border-controller/trueconf-border-controller-en.pdf" target="_self">
+             <span>
+              TrueConf Border Controller
+             </span>
+             <!-- -->
+             <span class="lang-filter-style">
+              (PDF, 1.0 MB)
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+         <!-- -->
+        </div>
+       </div>
+      </div>
+      <footer>
+       <div class="empty">
+       </div>
+       <div class="footer">
+        Â© 2025 TrueConf LLC. All rights reserved
+       </div>
+      </footer>
+     </div>
+     <footer class="page-edit">
+      <!-- -->
+      <!-- -->
+     </footer>
+     <!-- -->
+    </main>
+   </div>
+   <div class="global-ui">
+   </div>
+  </div>
+  <script defer="" src="/docs/main/assets/js/app.a27afe7b.js">
+  </script>
+  <script defer="" src="/docs/main/assets/js/2.76ff991c.js">
+  </script>
+  <script defer="" src="/docs/main/assets/js/1.98c52639.js">
+  </script>
+  <script defer="" src="/docs/main/assets/js/34.804579db.js">
+  </script>
+  <script defer="" src="/docs/main/assets/js/27.48d9fe56.js">
+  </script>
+  <script defer="" src="/docs/main/assets/js/30.44187987.js">
+  </script>
+  <script defer="" src="/docs/main/assets/js/28.61a155f2.js">
+  </script>
+  <script defer="" src="/docs/main/assets/js/23.0e45a671.js">
+  </script>
+  <script defer="" src="/docs/main/assets/js/18.327381d5.js">
+  </script>
+ </body>
+</html>

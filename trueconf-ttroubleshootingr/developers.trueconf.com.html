@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <title>
+   Video Conferencing SDK and API – TrueConf API and SDK
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="https://developers.trueconf.com/tc-content/themes/developers/css/normalize.css" rel="stylesheet"/>
+  <link href="https://developers.trueconf.com/tc-content/themes/developers/css/main.css" rel="stylesheet"/>
+  <meta content="max-image-preview:large" name="robots">
+   <!-- This site is optimized with the Yoast SEO plugin v13.2 - https://yoast.com/wordpress/plugins/seo/ -->
+   <meta content="Video Conferencing SDK and API for Windows, Android, iOS, WebRTC client. Adding TrueConf meeting and collaboration tools into your existing solutions, devices and applications." name="description">
+    <meta content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots"/>
+    <link href="https://developers.trueconf.com/" rel="canonical">
+     <meta content="en_US" property="og:locale"/>
+     <meta content="website" property="og:type"/>
+     <meta content="Video Conferencing SDK and API – TrueConf API and SDK" property="og:title"/>
+     <meta content="Video Conferencing SDK and API for Windows, Android, iOS, WebRTC client. Adding TrueConf meeting and collaboration tools into your existing solutions, devices and applications." property="og:description"/>
+     <meta content="https://developers.trueconf.com/" property="og:url"/>
+     <meta content="TrueConf for developers" property="og:site_name"/>
+     <script class="yoast-schema-graph yoast-schema-graph--main" type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://developers.trueconf.com/#website","url":"https://developers.trueconf.com/","name":"TrueConf for developers","inLanguage":"en-US","description":"\u0421\u0438\u0441\u0442\u0435\u043c\u044b \u0432\u0438\u0434\u0435\u043e\u043a\u043e\u043d\u0444\u0435\u0440\u0435\u043d\u0438\u0439 TrueConf","potentialAction":{"@type":"SearchAction","target":"https://developers.trueconf.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://developers.trueconf.com/#primaryimage","inLanguage":"en-US","url":"/tc-content/uploads/2020/09/logo.svg"},{"@type":"WebPage","@id":"https://developers.trueconf.com/#webpage","url":"https://developers.trueconf.com/","name":"Video Conferencing SDK and API \u2013 TrueConf API and SDK","isPartOf":{"@id":"https://developers.trueconf.com/#website"},"inLanguage":"en-US","primaryImageOfPage":{"@id":"https://developers.trueconf.com/#primaryimage"},"datePublished":"2020-11-27T13:05:43+00:00","dateModified":"2023-07-24T11:05:36+00:00","description":"Video Conferencing SDK and API for Windows, Android, iOS, WebRTC client. Adding TrueConf meeting and collaboration tools into your existing solutions, devices and applications."}]}
+     </script>
+     <!-- / Yoast SEO plugin. -->
+     <link href="//www.google.com" rel="dns-prefetch">
+      <link href="//s.w.org" rel="dns-prefetch"/>
+      <link href="https://developers.trueconf.com/tc-content/plugins/urvanov-syntax-highlighter/css/min/urvanov_syntax_highlighter.min.css?ver=2.8.23" id="urvanov_syntax_highlighter-css" media="all" rel="stylesheet" type="text/css"/>
+      <link href="https://developers.trueconf.com/tc-content/plugins/contact-form-7/includes/css/styles.css?ver=5.3.2" id="contact-form-7-css" media="all" rel="stylesheet" type="text/css"/>
+      <link href="https://developers.trueconf.com/tc/wp-includes/css/dist/block-library/style.min.css?ver=5.7.1" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+      <link href="https://developers.trueconf.com/tc-content/plugins/responsive-lightbox/assets/nivo/nivo-lightbox.min.css?ver=2.3.2" id="responsive-lightbox-nivo-css" media="all" rel="stylesheet" type="text/css"/>
+      <link href="https://developers.trueconf.com/tc-content/plugins/responsive-lightbox/assets/nivo/themes/default/default.css?ver=2.3.2" id="responsive-lightbox-nivo-default-css" media="all" rel="stylesheet" type="text/css"/>
+      <script id="jquery-core-js" src="https://developers.trueconf.com/tc/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" type="text/javascript">
+      </script>
+      <script id="jquery-migrate-js" src="https://developers.trueconf.com/tc/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" type="text/javascript">
+      </script>
+      <script id="newscript-js" src="https://developers.trueconf.com/tc-content/themes/developers/js/livechat.js?ver=5.7.1" type="text/javascript">
+      </script>
+      <script id="urvanov_syntax_highlighter_js-js-extra" type="text/javascript">
+       /* <![CDATA[ */
+var UrvanovSyntaxHighlighterSyntaxSettings = {"version":"2.8.23","is_admin":"0","ajaxurl":"https:\/\/developers.trueconf.com\/tc\/wp-admin\/admin-ajax.php","prefix":"urvanov-syntax-highlighter-","setting":"urvanov-syntax-highlighter-setting","selected":"urvanov-syntax-highlighter-setting-selected","changed":"urvanov-syntax-highlighter-setting-changed","special":"urvanov-syntax-highlighter-setting-special","orig_value":"data-orig-value","debug":""};
+var UrvanovSyntaxHighlighterSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+      </script>
+      <script id="urvanov_syntax_highlighter_js-js" src="https://developers.trueconf.com/tc-content/plugins/urvanov-syntax-highlighter/js/min/urvanov_syntax_highlighter.min.js?ver=2.8.23" type="text/javascript">
+      </script>
+      <script id="responsive-lightbox-nivo-js" src="https://developers.trueconf.com/tc-content/plugins/responsive-lightbox/assets/nivo/nivo-lightbox.min.js?ver=2.3.2" type="text/javascript">
+      </script>
+      <script id="underscore-js" src="https://developers.trueconf.com/tc/wp-includes/js/underscore.min.js?ver=1.8.3" type="text/javascript">
+      </script>
+      <script id="responsive-lightbox-infinite-scroll-js" src="https://developers.trueconf.com/tc-content/plugins/responsive-lightbox/assets/infinitescroll/infinite-scroll.pkgd.min.js?ver=5.7.1" type="text/javascript">
+      </script>
+      <script id="responsive-lightbox-js-extra" type="text/javascript">
+       /* <![CDATA[ */
+var rlArgs = {"script":"nivo","selector":"lightbox","customEvents":"","activeGalleries":"1","effect":"fade","clickOverlayToClose":"1","keyboardNav":"1","errorMessage":"The requested content cannot be loaded. Please try again later.","woocommerce_gallery":"0","ajaxurl":"https:\/\/developers.trueconf.com\/tc\/wp-admin\/admin-ajax.php","nonce":"225881adfc"};
+/* ]]> */
+      </script>
+      <script id="responsive-lightbox-js" src="https://developers.trueconf.com/tc-content/plugins/responsive-lightbox/js/front.js?ver=2.3.2" type="text/javascript">
+      </script>
+      <link href="https://developers.trueconf.com/wp-json/" rel="https://api.w.org/"/>
+      <link href="https://developers.trueconf.com/wp-json/wp/v2/pages/17223" rel="alternate" type="application/json"/>
+      <link href="https://developers.trueconf.com/tc/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+      <link href="https://developers.trueconf.com/tc/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
+      <link href="https://developers.trueconf.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdevelopers.trueconf.com%2F" rel="alternate" type="application/json+oembed"/>
+      <link href="https://developers.trueconf.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdevelopers.trueconf.com%2F&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
+      <style type="text/css">
+       .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+      </style>
+      <link href="https://developers.trueconf.com/tc-content/uploads/2020/02/favicon.ico" rel="icon" sizes="32x32"/>
+      <link href="https://developers.trueconf.com/tc-content/uploads/2020/02/favicon.ico" rel="icon" sizes="192x192"/>
+      <link href="https://developers.trueconf.com/tc-content/uploads/2020/02/favicon.ico" rel="apple-touch-icon"/>
+      <meta content="https://developers.trueconf.com/tc-content/uploads/2020/02/favicon.ico" name="msapplication-TileImage"/>
+     </link>
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <style>
+   #development .development__right img {
+    max-height: 60px;
+    width: auto;
+    margin: 10px auto;
+}
+
+.registration__header{
+font-size: 43px;
+}
+.registration__description {
+font-size: 20px;
+}
+
+.scroll-menu__list {
+margin:0;
+}
+
+.projects__description {
+font-size:18px;
+}
+
+.banpara {
+background-image: url('/tc-content/uploads/2019/05/banpara.png');
+}
+.stambul {
+background-image: url('/tc-content/uploads/2019/05/istanbul-airport-1.png')
+}
+
+.clinictracker {
+background-image: url('/tc-content/uploads/2020/01/clinictracker-bg.png')
+}
+
+.kuwait {
+background-image: url('/tc-content/uploads/2019/05/kuwait.png')
+}
+
+.success-message {
+    text-align: left;
+    font-size: 20px;
+    color: #48c020;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.development__right {
+flex-direction: row;
+flex-wrap:wrap;
+margin: 40px 0;
+}
+
+.visual-studio__icon {
+width:300px
+}
+
+.projects__block {
+  position: relative;
+  background-size: contain;
+}
+
+.read-more {
+   position: absolute;
+   bottom: 15px;
+   right:30px;
+}
+
+.button:not(.button--default) {
+    border: 0;
+margin: 0;
+    padding: 20px 28px !important;
+}
+
+.description__text {
+    padding-top:150px;
+}
+
+.development__description {
+  margin-bottom: 0px !important;
+}
+
+.development  {
+ padding-bottom: 0px !important;
+}
+.visual-studio__icon {
+   margin: 50px  auto;
+}
+@media (max-width: 992px) {
+ .description__header {
+    margin-top:0px;
+    padding-top:0px;
+}
+ .description__text {
+    padding-top:25px;
+    padding-bottom:350px;
+ }
+
+.visual-studio__icon {
+   margin: 25px auto;
+}
+
+}
+
+@media (max-width: 480px) {
+.advantage__header, .infrastructure__header {
+  font-size: 18px;
+}
+}
+
+@media (max-width: 768px) {
+.registration__left {
+  flex-basis: 0;
+}
+.name {
+  font-size: 1em;
+}
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+.registration__left {
+  flex-basis: 470px;
+}
+.name {
+  font-size: 1.1em;
+}
+}
+@media (min-width: 1200px) {
+.registration__left {
+  flex-basis: 500px;
+}
+.name {
+  font-size: 1.2em;
+}
+}
+.navigation__item {
+  padding: 0;
+}
+
+.flex-row img {
+  height: 4.5em;
+  display: block;
+  margin: 1.6em auto 1.0em auto;
+}
+.flex-row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.four-column {
+  float: left;
+  width: 25%;
+  flex: 1 200px;
+  padding: 1em;
+}
+.sdk-items {
+  height: 100%;
+  display: block;
+  text-align: center;
+    padding: 0.2em;
+  border:  1px solid #dddddd;
+  border-radius: 10px;
+}
+.sdk-items:hover {  
+  border-color: #30B1C8;
+}
+.bar1, .bar2, .bar3 {
+  background-color: #30B1C8;
+}
+.name {
+  font-weight: 400;
+  padding: 0 0.2em;
+  margin: 0;
+  display: block;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name-text {
+}
+.pdf-link {
+text-decoration: underline;
+    color: white;
+}
+.four-column a {
+  text-decoration: none;
+}
+
+.four-column a:hover, .pdf-link:hover, .zopim-block:hover {
+  text-decoration: underline;
+  cursor:pointer;
+}
+.video-block{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.video-container{
+    position:relative;
+    padding-bottom:56.25%;
+    margin-top: 0.5em;
+    height:0;
+    display: block;
+    overflow:hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.registration__description {
+  line-height: 1.3;
+  font-size: 1.2em;
+}
+.registration__header {
+/* */
+}
+
+.first-screen{
+  background-image: none;
+  padding-bottom: 2em;
+  padding-top: 0;
+}
+
+.first-screen__header {
+  font-size: 2.1em;
+  font-family: "Open Sans", "Roboto", sans-serif;
+  margin: 1.5em 0 0.5em 0;
+}
+
+.first-screen__description {
+  padding: 0.5em 0;
+}
+
+.first-screen__logo {
+  width: 148px;
+}
+
+.first-screen__header, .first-screen__description, .four-column a,
+ .four-column a:visited, .navigation__link {
+  color: #272727 !important;
+}
+
+.shadow-nav {
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 1em 0;
+  margin-bottom: 1em;
+}
+
+.footer-second__item {
+  margin: 0 1em;
+}
+  </style>
+  <section class="first-screen" style="margin-bottom: 0">
+   <div class="shadow-nav">
+    <header class="container container--header">
+     <a href="https://trueconf.com">
+      <img alt="Logo" class="first-screen__logo" src="/tc-content/uploads/2020/09/logo.svg"/>
+     </a>
+     <nav class="navigation">
+      <ul class="navigation__list">
+       <li class="burger-icon">
+        <div class="bar1">
+        </div>
+        <div class="bar2">
+        </div>
+        <div class="bar3">
+        </div>
+       </li>
+       <li class="navigation__item">
+        <a class="navigation__link hidden" href="https://docs.trueconf.com/main/en/" rel="noopener noreferrer" target="_blank">
+         Documentation
+        </a>
+       </li>
+       <li class="navigation__item">
+        <a class="navigation__link hidden" href="https://trueconf.com/blog/knowledge-base" rel="noopener noreferrer" target="_blank">
+         Knowledge base
+        </a>
+       </li>
+       <li class="navigation__item">
+        <a class="navigation__link hidden" href="https://trueconf.com/support.html" rel="noopener noreferrer" target="_blank">
+         Support
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </header>
+   </div>
+   <div class="container">
+    <h1 class="first-screen__header">
+     Video Conferencing SDK and API
+    </h1>
+    <div class="first-screen__description" id="interfaces">
+     Integration interfaces
+    </div>
+    <div class="flex-row">
+     <div class="four-column">
+      <a href="https://developers.trueconf.com/api/server" rel="noopener noreferrer" target="_blank">
+       <span class="sdk-items">
+        <img src="/tc-content/uploads/2020/10/server-api.svg"/>
+        <span class="name">
+         TrueConf Server API
+        </span>
+        <span>
+        </span>
+       </span>
+      </a>
+     </div>
+     <div class="four-column">
+      <a href="https://docs.trueconf.com/videosdk/en/introduction/common" rel="noopener noreferrer" target="_blank">
+       <span class="sdk-items">
+        <img src="/tc-content/uploads/2020/10/room-api.svg"/>
+        <span class="name">
+         TrueConf Room API
+        </span>
+        <span>
+        </span>
+       </span>
+      </a>
+     </div>
+     <div class="four-column">
+      <a href="https://trueconf.com/blog/knowledge-base/trueconf-protocol-designed-to-interact-with-trueconf-client-applications.html" rel="noopener noreferrer" target="_blank">
+       <span class="sdk-items">
+        <img src="/tc-content/uploads/2020/10/protocol-trueconf.svg"/>
+        <span class="name">
+         “trueconf:” protocol
+        </span>
+        <span>
+        </span>
+       </span>
+      </a>
+     </div>
+     <div class="four-column">
+      <a href="https://trueconf.com/blog/knowledge-base/launch-trueconf-client-applications-via-command-line-parameters.html" rel="noopener noreferrer" target="_blank">
+       <span class="sdk-items">
+        <img src="/tc-content/uploads/2020/10/commandline-tc.svg"/>
+        <span class="name">
+         Command line parameters
+        </span>
+        <span>
+        </span>
+       </span>
+      </a>
+     </div>
+    </div>
+    <div class="flex-row">
+     <div class="four-column">
+      <a href="https://github.com/trueconf" rel="noopener noreferrer" target="_blank">
+       <span class="sdk-items">
+        <img src="/tc-content/uploads/2020/10/github-tc.svg"/>
+        <span class="name">
+         Sample GitHub projects
+        </span>
+        <span>
+        </span>
+       </span>
+      </a>
+     </div>
+     <div class="four-column">
+      <a href="https://trueconf.com/blog/news/diy-integration-kit-by-trueconf-build-your-own-arm-based-video-conferencing-solution.html" rel="noopener noreferrer" target="_blank">
+       <span class="sdk-items">
+        <img src="/tc-content/uploads/2020/10/arm-tc.svg"/>
+        <span class="name">
+         ARM integration kit
+        </span>
+        <span>
+        </span>
+       </span>
+      </a>
+     </div>
+     <div class="four-column">
+      <a href="https://trueconf.com/blog/knowledge-base/embedding-trueconf-video-conferencing-into-your-website.html" rel="noopener noreferrer" target="_blank">
+       <span class="sdk-items">
+        <img src="/tc-content/uploads/2020/10/webrtc-tc.svg"/>
+        <span class="name">
+         WebRTC widget
+        </span>
+        <span>
+        </span>
+       </span>
+      </a>
+     </div>
+     <div class="four-column">
+      <div class="zopim-block" onclick="OpenChat('Hello! I would like to learn more about TrueConf client app branding options.')">
+       <span class="sdk-items">
+        <img src="/tc-content/uploads/2020/10/branding-tc.svg"/>
+        <span class="name">
+         White-label TrueConf solutions
+        </span>
+        <span>
+        </span>
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="first-screen__description" id="libraries">
+     Libraries for developers
+    </div>
+    <div class="first-screen__buttons" style="display: none;">
+    </div>
+    <div class="flex-row" style="padding-top: 10px">
+     <div class="four-column">
+      <a href="https://developers.trueconf.com/sdk-for-windows" rel="noopener noreferrer" target="_blank">
+       <span class="sdk-items">
+        <img src="/tc-content/uploads/2020/10/windows-sdk.svg"/>
+        <div class="name">
+         SDK for Windows
+        </div>
+        <span>
+        </span>
+       </span>
+      </a>
+     </div>
+     <div class="four-column">
+      <a href="https://developers.trueconf.com/sdk-for-ios-and-android" rel="noopener noreferrer" target="_blank">
+       <span class="sdk-items">
+        <img src="/tc-content/uploads/2020/10/android-sdk.svg"/>
+        <div class="name">
+         SDK for Android/Android TV
+        </div>
+        <span>
+        </span>
+       </span>
+      </a>
+     </div>
+     <div class="four-column">
+      <a href="https://developers.trueconf.com/sdk-for-ios-and-android" rel="noopener noreferrer" target="_blank">
+       <span class="sdk-items">
+        <img src="/tc-content/uploads/2020/10/ios-sdk.svg"/>
+        <div class="name">
+         SDK for iOS/iPadOS
+        </div>
+        <span>
+        </span>
+       </span>
+      </a>
+     </div>
+     <div class="four-column">
+      <div class="zopim-block" onclick="OpenChat('Hello! I would like to learn more about cross-platform TrueConf SDKs that allow to develop mobile apps on Cordova, Xamarin and React Native.')">
+       <span class="sdk-items">
+        <img src="/tc-content/uploads/2020/10/all-sdk.svg"/>
+        <div class="name">
+         Cross Platform SDK
+        </div>
+        <span>
+        </span>
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <div class="scroll-menu container">
+   <ul class="scroll-menu__list">
+    <li class="scroll-menu__home" data-scroll="home">
+    </li>
+    <li class="scroll-menu__item" data-scroll="projects">
+     CASE STUDIES
+    </li>
+    <li class="scroll-menu__item" data-scroll="sdk">
+     SDK
+    </li>
+    <li class="scroll-menu__item" data-scroll="advantages">
+     Why TrueConf?
+    </li>
+    <li class="scroll-menu__item" data-scroll="development">
+     For Developers
+    </li>
+    <li class="scroll-menu__item" data-scroll="infrastructure">
+     Scalability
+    </li>
+    <li class="scroll-menu__item" data-scroll="start">
+     Get Started
+    </li>
+   </ul>
+  </div>
+  <section class="description" id="home">
+   <div class="container">
+    <h2 class="description__header">
+     Embed video conferencing into your apps
+    </h2>
+   </div>
+   <div class="container description__container">
+    <div class="description__text">
+     With TrueConf SDK, you can integrate video conferencing into your existing apps or create completely new communication solutions. Our
+     <a href="#libraries" style="color: #f28627;">
+      developer libraries
+     </a>
+     are already being used by a large number of companies around the world. Join our community!
+    </div>
+   </div>
+  </section>
+  <section class="projects" id="projects">
+   <div class="container">
+    <h2 class="projects__header">
+     Success stories
+    </h2>
+    <div class="projects__text">
+     These companies have already made video conferencing their competitive advantage. Would you like to be the next?
+     <span class="tell-us" data-scroll="start" style="cursor:pointer; text-decoration:underline;">
+      Tell us!
+     </span>
+    </div>
+   </div>
+   <div class="container projects__customers">
+    <div class="projects__block banpara projects__block--left-border">
+     <img alt="Banpara" class="projects__logo" src="/tc-content/uploads/2019/05/banpara-bank.png" width="100"/>
+     <span class="projects__description">
+      “We’ve created this completely automated bank branch to bridge the distance between the bank and our clients. With the help of state-of-art technologies we are doing our best to simplify customer experience…..”
+     </span>
+     <a class="read-more" href="tc-content/uploads/2019/05/banpara.pdf">
+      Read more
+     </a>
+    </div>
+    <div class="projects__block stambul">
+     <img alt="Stambul" class="projects__logo" src="/tc-content/uploads/2019/05/stambul_logo.svg" width="100"/>
+     <span class="projects__description">
+      “The greatest thing about TrueConf is that it worked perfectly right off-the-shelf. Their products proved both reliable and user-friendly….”
+     </span>
+     <a class="read-more" href="tc-content/uploads/2019/05/istanbul_airport.pdf">
+      Read more
+     </a>
+    </div>
+    <div class="projects__block clinictracker">
+     <img alt="ClinicTracker" class="projects__logo" src="/tc-content/uploads/2020/01/clinictracker-logo.png"/>
+     <span class="projects__description">
+      “Our partnership with TrueConf has allowed us to deliver an integrated telehealth service platform on web, desktop, and mobile environments….”
+     </span>
+     <a class="read-more" href="https://trueconf.com/blog/wp-content/uploads/2019/10/ClinicTracker_en.pdf">
+      Read more
+     </a>
+    </div>
+    <div class="projects__block kuwait projects__block--right-border">
+     <img alt="Kuwait" class="projects__logo" src="/tc-content/uploads/2019/05/53904_p.jpg.png" width="150"/>
+     <span class="projects__description">
+      “Thanks to TrueConf, we managed to deploy a budget-friendly video banking system that did not require complicated software, big-ticket equipment or large-scale developer support. By implementing TrueConf solution, we improved our quality of client service and optimized business processes with reduced costs…”
+     </span>
+     <a class="read-more" href="tc-content/uploads/2019/05/kuwait.pdf">
+      Read more
+     </a>
+    </div>
+   </div>
+  </section>
+  <section id="sdk" style="margin-bottom: 20px;">
+   <h2 class="video__header">
+    Video conferencing is just the tip of the iceberg
+   </h2>
+   <div class="container">
+    <div class="video-block">
+     <div class="video-container">
+      <iframe class="video__frame" frameborder="0" src="https://www.youtube.com/embed/y-42rPVFF40">
+      </iframe>
+     </div>
+    </div>
+    <p class="video__description">
+     TrueConf brings your communications to the next level! Print your documents on the kiosk side, record conferences on the server, share content, change background and much more. Source codes of our demo applications and ready-made solutions are available on GitHub. Discover new opportunities with TrueConf SDK!
+    </p>
+    <div style="text-align: center">
+     <a class="button button--action button--strong button--github" href="https://github.com/trueconf">
+      Learn more
+     </a>
+    </div>
+   </div>
+  </section>
+  <section class="advantages" id="advantages">
+   <div class="container">
+    <h2 class="advantages__header">
+     Why TrueConf?
+    </h2>
+   </div>
+   <div class="container advantages--container">
+    <div class="advantages__block">
+     <div class="advantage">
+      <img alt="" class="advantage__icon" src="/tc-content/themes/developers/images/landing/monitors.svg"/>
+      <div class="advantage__header">
+       Cross-platform
+      </div>
+      <span class="advantage__description">
+       We have created developer libraries for all popular platforms: Windows, Linux, macOS, iOS, Android, and HTML/JS.
+      </span>
+     </div>
+     <div class="advantage">
+      <img alt="" class="advantage__icon" src="/tc-content/themes/developers/images/landing/shield.svg" style="width: 41px;"/>
+      <div class="advantage__header">
+       RELIABILITY
+      </div>
+      <span class="advantage__description">
+       Our SDK and API have been tested in the multi-million audience projects.
+      </span>
+     </div>
+    </div>
+    <img alt="Peoples" class="advantages__image" src="/tc-content/themes/developers/images/landing/peoples.svg"/>
+    <div class="advantages__block">
+     <div class="advantage" style="min-height: 346px;">
+      <img alt="" class="advantage__icon" src="/tc-content/themes/developers/images/landing/castomisation.svg"/>
+      <div class="advantage__header">
+       CUSTOMIZATION
+      </div>
+      <span class="advantage__description">
+       Customize whatever you need: from UI to user status management system.
+      </span>
+     </div>
+     <div class="advantage">
+      <img alt="" class="advantage__icon" src="/tc-content/themes/developers/images/landing/support.svg"/>
+      <div class="advantage__header">
+       SUPPORT
+      </div>
+      <span class="advantage__description">
+       Implement any interface and business logic, while we’ll take care of communication quality.
+      </span>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="development container" id="development">
+   <h2 class="development__header" style="margin-bottom: 50px;">
+    Comfortable development
+   </h2>
+   <p class="development__description">
+    We’ve done our best to make development and implementation easy for you. We built SDK and convenient libraries, compiled clear documentation, and downloaded use cases on GitHub. Take a look, it’s really easy!
+    <!--
+   <div class="development__wrapper">
+    <div class="video__left video__left--development">
+      <div class="video__inner">
+        <iframe class="video__frame" src="https://www.youtube.com/embed/OM8ijuYNLfw" frameborder="0"></iframe>
+      </div>
+    </div>
+  -->
+    <div class="development__right">
+     <img alt="Visual Studio icon" class="visual-studio__icon" src="tc-content/uploads/2019/05/xamardin-1.svg"/>
+     <img alt="Visual Studio icon" class="visual-studio__icon" src="tc-content/uploads/2019/05/Cordova_logo_newbrand.svg" style="background-color:#dddddd;"/>
+     <img alt="Visual Studio icon" class="visual-studio__icon" src="/tc-content/uploads/2019/07/Visual_Studio_2017_logo_and_wordmark.svg"/>
+     <img alt="DX Delphi" class="visual-studio__icon" src="/tc-content/themes/developers/images/landing/dx.png"/>
+    </div>
+   </p>
+  </section>
+  <section class="infrastructure" id="infrastructure">
+   <div class="container">
+    <h2 class="infrastructure__header">
+     Affordable infrastructure
+    </h2>
+   </div>
+   <div class="container infrastructure__container">
+    <div class="infrastructure__left">
+     <img alt="infrastructure" class="infrastructure__image" src="/tc-content/uploads/2020/11/infrastructure.svg"/>
+    </div>
+    <div class="infrastructure__right">
+     <span class="infrastructure__description">
+      You won’t need to buy expensive MCUs or pay for per-minute subscriptions — all your apps will be integrated on our TrueConf Server platform. You can work both in the cloud and in LAN/VPN, while our transparent pricing policy will definitely impress you.
+     </span>
+    </div>
+   </div>
+  </section>
+  <section class="registration" id="start" style="padding-top: 5px;">
+   <div class="container registration--container">
+    <div class="registration__left">
+     <h2 class="registration__header">
+      Let’s get started!
+     </h2>
+     <p class="registration__description">
+      Fill out this form to request TrueConf SDK. Our experts will help you set up your development environment and organize testing processes.
+     </p>
+     <a class="pdf-link" href="/wp-content/uploads-dev-com/2018/08/sdk_and_api.pdf" rel="noopener noreferrer" target="_blank">
+      <img src="/tc-content/uploads/2020/10/pdf.png" style="display: inline-block; "/>
+      <span style="padding-left: 0.3em">
+       TrueConf API and SDK Features (PDF, 1MB)
+      </span>
+     </a>
+    </div>
+    <div class="registration__right" id="registration__right">
+     <div class="wpcf7" dir="ltr" id="wpcf7-f17128-p17223-o1" lang="en-US" role="form">
+      <div class="screen-reader-response">
+       <p aria-atomic="true" aria-live="polite" role="status">
+       </p>
+       <ul>
+       </ul>
+      </div>
+      <form action="/#wpcf7-f17128-p17223-o1" class="wpcf7-form init registration-form" data-status="init" method="post" novalidate="novalidate">
+       <div style="display: none;">
+        <input name="_wpcf7" type="hidden" value="17128"/>
+        <input name="_wpcf7_version" type="hidden" value="5.3.2"/>
+        <input name="_wpcf7_locale" type="hidden" value="en_US"/>
+        <input name="_wpcf7_unit_tag" type="hidden" value="wpcf7-f17128-p17223-o1"/>
+        <input name="_wpcf7_container_post" type="hidden" value="17223"/>
+        <input name="_wpcf7_posted_data_hash" type="hidden" value=""/>
+        <input name="_wpcf7_recaptcha_response" type="hidden" value=""/>
+       </div>
+       <div class="registration-form">
+        <div class="registration-form__title">
+         You're almost there
+        </div>
+        <p>
+         <span class="wpcf7-form-control-wrap text-489">
+          <input aria-invalid="false" aria-required="true" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required registration-form__text" id="name" name="text-489" placeholder="Name" size="40" type="text" value=""/>
+         </span>
+         <br/>
+         <span class="wpcf7-form-control-wrap email-609">
+          <input aria-invalid="false" aria-required="true" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email registration-form__text" id="email" name="email-609" placeholder="example@mail.com" size="40" type="email" value=""/>
+         </span>
+         <br/>
+         <span class="wpcf7-form-control-wrap tel-918">
+          <input aria-invalid="false" aria-required="true" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel registration-form__text" id="tel" name="tel-918" placeholder="Phone" size="40" type="tel" value=""/>
+         </span>
+         <br/>
+         <span class="wpcf7-form-control-wrap textarea-490">
+          <textarea aria-invalid="false" aria-required="true" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required registration-form__description" cols="40" id="description" name="textarea-490" placeholder="Tell us about your project" rows="5"></textarea>
+         </span>
+         <br/>
+         <input class="wpcf7-form-control wpcf7-submit button button--action" type="submit" value="Submit Your Request"/>
+        </p>
+        <p class="success-message visually-hidden">
+         We have received your request and will contact you shortly.
+        </p>
+       </div>
+       <div aria-hidden="true" class="wpcf7-response-output">
+       </div>
+      </form>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="footer-second">
+   <ul class="footer-second__list">
+    <li class="footer-second__item">
+     <a class="footer-second__links" href="https://trueconf.com/legal/terms.html">
+      Terms of Use
+     </a>
+    </li>
+    <li class="footer-second__item">
+     <a class="footer-second__links" href="https://trueconf.com/company/legal/privacy.html">
+      Privacy Policy
+     </a>
+    </li>
+    <li class="footer-second__item">
+     <a class="footer-second__links" href="https://trueconf.com/company/legal/cookie.html">
+      Cookie Policy
+     </a>
+    </li>
+   </ul>
+   <p class="copyright">
+    ©
+    <script>
+     document.write(new Date().getFullYear());
+    </script>
+    . TrueConf LLC. All rights reserved.
+   </p>
+  </footer>
+  <script type="text/javascript">
+   document.addEventListener( 'wpcf7mailsent', function( event ) {
+    //document.querySelector('.success-message').classList.remove('visually-hidden');
+}, false );
+
+
+  document.querySelector(".tell-us").addEventListener('click', e => {
+    const scrollToElement = document.querySelector("#start").offsetTop;
+    window.scrollTo({
+      top:scrollToElement - 95,
+      left: 0 ,
+      behavior: 'smooth'
+    });
+  });
+
+function OpenChat(message) {
+    liveChat.say(message);
+}
+  </script>
+  <script src="https://developers.trueconf.com/tc-content/themes/developers/js/main.js">
+  </script>
+  <script id="contact-form-7-js-extra" type="text/javascript">
+   /* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/developers.trueconf.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+var wpcf7 = {"apiSettings":{"root":"https:\/\/developers.trueconf.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+  </script>
+  <script id="contact-form-7-js" src="https://developers.trueconf.com/tc-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.3.2" type="text/javascript">
+  </script>
+  <script id="google-recaptcha-js" src="https://www.google.com/recaptcha/api.js?render=6LdmD6cUAAAAAJXk8MeudKVb1wcIUPAt_ec5YSqD&amp;ver=3.0" type="text/javascript">
+  </script>
+  <script id="wpcf7-recaptcha-js-extra" type="text/javascript">
+   /* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LdmD6cUAAAAAJXk8MeudKVb1wcIUPAt_ec5YSqD","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+  </script>
+  <script id="wpcf7-recaptcha-js" src="https://developers.trueconf.com/tc-content/plugins/contact-form-7/modules/recaptcha/script.js?ver=5.3.2" type="text/javascript">
+  </script>
+  <script id="wp-embed-js" src="https://developers.trueconf.com/tc/wp-includes/js/wp-embed.min.js?ver=5.7.1" type="text/javascript">
+  </script>
+ </body>
+</html>
+<!-- hyper cache 2025-01-19 00:35:11 -->
